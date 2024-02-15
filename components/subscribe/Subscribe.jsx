@@ -22,6 +22,8 @@ const Subscribe = () => {
 
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [privacyAgreed, setPrivacyAgreed] = useState(false);
+  const [privacyAgreed2, setPrivacyAgreed2] = useState(false);
+
 
   useEffect(() => {
     const currentTimeNow = Date.now();
@@ -102,14 +104,7 @@ const Subscribe = () => {
             onChange={(e) => setEmail(e.target.value)}
             onFocus={handleInputFocus}
           />
-          {/* <input
-            className={`subscribe ml-1 mr-1 ${error ? "error" : ""}`}
-            type="text"
-            placeholder={t("Phone")}
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            onFocus={handleInputFocus}
-          /> */}
+        
           <PhoneInput
             inputProps={{
               name: "phone",
@@ -124,7 +119,7 @@ const Subscribe = () => {
         <button
           className="button-subscribe flex justify-center items-center"
           onClick={handleSubscribe}
-          disabled={!termsAgreed || !privacyAgreed}
+          disabled={!termsAgreed || !privacyAgreed || !privacyAgreed2}
         >
           {loading ? <LoaderButton /> : t("subscribe.button")}
         </button>
@@ -167,6 +162,16 @@ const Subscribe = () => {
           />
 
           {t("subscribe.promotional")}
+        </label>
+        <label className={`acceptedTerms ${privacyAgreed2 ? "active" : ""}`}>
+          <input
+            type="checkbox"
+            checked={privacyAgreed2}
+            onChange={() => setPrivacyAgreed2(!privacyAgreed2)}
+            className="mr-2"
+          />
+
+          {t("I agree to receive promotional sms from xxlcasinolist")}
         </label>
       </div>
       <span className="flex mt-5">
