@@ -6067,7 +6067,7 @@ h1 {
   background: #0967e3;
 }
 .acceptedTerms::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background: transparent;
@@ -6077,7 +6077,7 @@ h1 {
   top: 3px;
 }
 .acceptedTerms.active::before {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   left: 2px;
@@ -8873,13 +8873,14 @@ p {
 .header-brands {
   background: #1d273047;
 }
-.header-brands a.active, .header-brands a:hover {
+.header-brands a.active,
+.header-brands a:hover {
   background: transparent;
 }
 .header-brands .header__container {
   justify-content: center;
 }
-.header-brands .header__container a{
+.header-brands .header__container a {
   padding: 0;
 }
 .header-brands .header__container a img {
@@ -8889,13 +8890,13 @@ p {
   /* grays */
   --tw-grayscale: initial;
   filter: initial;
-
 }
 /* .header-brands a:hover {
   background: #d6920a;
 
 } */
-.Smokace a, .Winlegends a {
+.Smokace a,
+.Winlegends a {
   padding: 0;
 }
 .icon-flag,
@@ -8983,7 +8984,32 @@ p {
   font-size: 14px;
   color: #e2dddd;
 }
-input.subscribe {
+.react-tel-input .country-list .country .dial-code {
+  color: #0967e3 !important;
+}
+.react-tel-input .flag-dropdown {
+  background: transparent !important;
+  border: 1px solid rgba(9, 103, 227, 0.267) !important;
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .onerow {
+    flex-direction: column;
+  }
+  .onerow input {
+  }
+  .react-tel-input {
+    margin-left: 0 !important;
+    margin-top: 8px;
+  }
+  .subscribe-block .w-full {
+    flex-direction: column;
+  }
+  .subscribe-block .w-full .button-subscribe {
+    margin-top: 8px;
+  }
+}
+input.subscribe,
+.react-tel-input input.form-control {
   padding: 7px 15px;
   outline: none;
   border: 1px solid rgba(9, 103, 227, 0.267);
@@ -8992,6 +9018,24 @@ input.subscribe {
   width: 80%;
   transition: 0.3s;
   height: 37px;
+  border-radius: 2px !important;
+}
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.highlight {
+  background: rgba(9, 103, 227, 0.466) !important;
+}
+.react-tel-input .flag-dropdown .selected-flag {
+  background: rgba(9, 103, 227, 0.266) !important;
+}
+.react-tel-input input.form-control {
+  padding-left: 55px;
+}
+.react-tel-input {
+  margin-left: 10px;
+  /* background: transparent !important; */
+}
+.react-tel-input .country-list {
+  background: #1d2730 !important;
 }
 input.error {
   border-color: rgb(239 68 68);
@@ -9745,7 +9789,12 @@ input.error {
     margin-left: 0;
   }
 }
-.brand-7089 .brand-slider, .brand-7089 .wrapper-container.background-block, .brand-6883 .brand-slider, .brand-6883 .wrapper-container.background-block, .brand-7383 .brand-slider, .brand-7383 .wrapper-container.background-block {
+.brand-7089 .brand-slider,
+.brand-7089 .wrapper-container.background-block,
+.brand-6883 .brand-slider,
+.brand-6883 .wrapper-container.background-block,
+.brand-7383 .brand-slider,
+.brand-7383 .wrapper-container.background-block {
   display: none;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
@@ -9958,7 +10007,8 @@ input.error {
 .page-gaming h2 {
   margin-top: 25px;
 }
-.page-gaming li a, .page-gaming a {
+.page-gaming li a,
+.page-gaming a {
   text-decoration: underline;
   color: #0967e3;
 }

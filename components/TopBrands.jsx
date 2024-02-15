@@ -27,6 +27,8 @@ export default function TopBrands() {
   );
   const filteredBrands = useTopBrandsFilter(213, languageDetails.allBrand);
 
+ 
+
   useEffect(() => {
     if (filteredBrands.length === 0) {
       setLoading(true);

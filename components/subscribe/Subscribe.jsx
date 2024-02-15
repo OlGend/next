@@ -5,8 +5,13 @@ import { X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import SliderExample from "./SliderExample";
 
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 const Subscribe = () => {
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [popupText, setPopupText] = useState("");
@@ -39,19 +44,21 @@ const Subscribe = () => {
     // Simulate a loading delay of 2 seconds
     setTimeout(() => {
       setLoading(false);
-      if (!email) {
+      if (!email && !phone) {
         setError(t("subscribe.error1"));
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         setError(t("subscribe.error2"));
       } else {
-        console.log("after", email);
+        console.log("after", email, phone);
         _cio.identify({
           id: email,
           email: email,
+          phone: phone,
         });
-        console.log("before", email);
+        console.log("before", email, phone);
 
         setEmail("");
+        setPhone("");
         setPopupText(t("subscribe.congrats"));
         setPopupVisible(true);
         setCountUsers((prevCount) => prevCount + 1);
@@ -86,14 +93,34 @@ const Subscribe = () => {
   return (
     <div className="w-full subscribe-block">
       <div className={`w-full flex relative ${error ? "error" : ""}`}>
-        <input
-          className={`subscribe ${error ? "error" : ""}`}
-          type="email"
-          placeholder={t("subscribe.email")}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          onFocus={handleInputFocus}
-        />
+        <div className="onerow flex">
+          <input
+            className={`subscribe ${error ? "error" : ""}`}
+            type="email"
+            placeholder={t("subscribe.email")}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onFocus={handleInputFocus}
+          />
+          {/* <input
+            className={`subscribe ml-1 mr-1 ${error ? "error" : ""}`}
+            type="text"
+            placeholder={t("Phone")}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            onFocus={handleInputFocus}
+          /> */}
+          <PhoneInput
+            inputProps={{
+              name: "phone",
+              required: true,
+              autoFocus: true,
+            }}
+            country={"us"}
+            value={phone}
+            onChange={(phone) => setPhone(phone)}
+          />
+        </div>
         <button
           className="button-subscribe flex justify-center items-center"
           onClick={handleSubscribe}
@@ -114,8 +141,22 @@ const Subscribe = () => {
             onChange={() => setTermsAgreed(!termsAgreed)}
             className="mr-2"
           />
-
-          {t("subscribe.agree")} <a target="_blank" className="underline text-sky-500" href="/terms-and-conditions">{t("subscribe.terms")}</a> {t("subscribe.and")} <a target="_blank" className="underline text-sky-500"  href="/privacy-policy">{t("subscribe.policy")}</a>
+          {t("subscribe.agree")}{" "}
+          <a
+            target="_blank"
+            className="underline text-sky-500"
+            href="/terms-and-conditions"
+          >
+            {t("subscribe.terms")}
+          </a>{" "}
+          {t("subscribe.and")}{" "}
+          <a
+            target="_blank"
+            className="underline text-sky-500"
+            href="/privacy-policy"
+          >
+            {t("subscribe.policy")}
+          </a>
         </label>
         <label className={`acceptedTerms ${privacyAgreed ? "active" : ""}`}>
           <input
