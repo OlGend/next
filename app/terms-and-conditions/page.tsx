@@ -99,30 +99,6 @@ export default async function Privacy() {
           <a target="_blank" href="https://xxlcasinolist.com/">
             xxlcasinolist.com
           </a>{" "}
-          and its affiliated domains:{" "}
-          <a target="_blank" href="https://casinogams.site">
-            casinogams.site
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://casinogams.store">
-            casinogams.store
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://spinwn.online">
-            spinwn.online
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://spinwn.site">
-            spinwn.site
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://spinwn.store">
-            spinwn.store
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://xxlcasinolist.com">
-            xxlcasinolist.com
-          </a>
         </p>
       </div>
     </div>

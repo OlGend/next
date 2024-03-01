@@ -435,6 +435,7 @@ const resources = {
       "guideslotsguide.excerpt":
         "Jeśli marzysz o wygraniu dużego jackpota, zanurz się w świat online slotów dzięki naszym wszechstronnym przewodnikom na xxlcasinolist.com. Wszystkie informacje, których potrzebujesz, od linii wypłat do progresywnych jackpotów, są dostępne na jednej platformie! Bądź na bieżąco z najnowszymi wydarzeniami w świecie hazardu na automatach i nawet wypróbuj darmowe gry na automatach bezpośrednio z Twojego urządzenia.",
       "play.to.casino": "Zagraj teraz w to kasyno",
+
       "subscribe.button": "Subskrybuj",
       "subscribe.email": "Adres email",
       "subscribe.players": "zapisanych graczy",
@@ -860,6 +861,7 @@ const resources = {
       "guideslotsguide.excerpt":
         "Hvis du aspirerer til å treffe jackpotten, dykk inn i verden av nettspilleautomater gjennom våre omfattende guider på xxlcasinolist.com. All den informasjonen du trenger, fra gevinstlinjer til progressive jackpotter, er tilgjengelig på én enkelt plattform! Hold deg oppdatert med de nyeste utviklingene innen spilleautomatgambling og prøv til og med ut gratis spilleautomatspill direkte fra enheten din.",
       "play.to.casino": "Spill nå på dette kasinoet",
+
       "subscribe.button": "Abonner",
       "subscribe.email": "E-Post",
       "subscribe.players": "spillere abonnert",
@@ -1274,6 +1276,7 @@ const resources = {
       "guideslotsguide.excerpt":
         "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
       "play.to.casino": "Jetzt im Casino spielen",
+      
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
       "subscribe.players": "abonnierte Spieler",
