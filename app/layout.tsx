@@ -39,7 +39,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Вставьте скрипт Customer.io прямо сюда */}
+
         <Script id="customerio" type="text/javascript">
           {`
             var _cio = _cio || [];
