@@ -13,7 +13,7 @@ export function extractReviewBonus(content) {
 }
 export function extractReviewImage(content) {
   const reviewStart = content.indexOf(
-    'src="https://bananocasino.com/wp-content/uploads'
+    'src="https://hotoffers.casino/wp-content/uploads'
   );
   if (reviewStart === -1) return "";
   const reviewEnd = content.indexOf('.png"', reviewStart);

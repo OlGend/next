@@ -3,7 +3,7 @@ import useSWR from "swr";
 
 async function getData(id) {
   const response = await fetch(
-    `https://bananocasino.com/wp-json/wp/v2/affiliates/${id}`
+    `https://hotoffers.casino/wp-json/wp/v2/affiliates/${id}`
   );
   const data = await response.json();
   return data;

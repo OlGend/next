@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: ['bananocasino.com'],
+    domains: ['hotoffers.casino'],
 
   },
   swcMinify: true,
