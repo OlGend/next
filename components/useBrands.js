@@ -2,7 +2,7 @@ import useSWR from "swr";
 
 async function getData(page) {
   const response = await fetch(
-    `https://hotoffers.casino/wp-json/wp/v2/affiliates?&per_page=100&page=${page}`
+    `https://bananocasino.com/wp-json/wp/v2/affiliates?&per_page=100&page=${page}`
   );
   
   if (!response.ok) {

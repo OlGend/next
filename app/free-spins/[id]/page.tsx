@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 async function getData(id: string) {
   const response = await fetch(
-    `https://hotoffers.casino/wp-json/wp/v2/affiliates/${id}`,
+    `https://bananocasino.com/wp-json/wp/v2/affiliates/${id}`,
     {
       next: {
         revalidate: 60,

@@ -6,7 +6,7 @@ import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 async function getData(id: string) {
   // Здесь выполняйте загрузку данных бренда, например, с использованием fetch
-  const response = await fetch(`https://hotoffers.casino/wp-json/wp/v2/affiliates/${id}`);
+  const response = await fetch(`https://bananocasino.com/wp-json/wp/v2/affiliates/${id}`);
   const data = await response.json();
   return data;
 }
